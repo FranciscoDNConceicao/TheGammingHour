@@ -6,3 +6,7 @@
 and employees, manage the store, edit the categories, edit producers, etc.;)</p>
 
 
+
+
+https://github.com/FranciscoDNConceicao/TheGammingHour/assets/123041029/b8305882-dfc0-4ec0-9e99-48d81a748583
+
