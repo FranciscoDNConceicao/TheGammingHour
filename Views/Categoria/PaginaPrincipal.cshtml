@@ -1,0 +1,49 @@
+﻿@model UTAD.LAB._2022.TheGammingHour.Models.ModelIndex
+@using System.Web
+@using Microsoft.AspNetCore.Html
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string nameCategDest = Model.Categorias.First().Nome;
+    
+}
+
+<div class="categ-page">
+    <div class="categ-name">
+        <p>@Html.DisplayName(nameCategDest)</p>
+    </div>
+    <div class="container-categ-page">
+        <div class="container-categ">
+            <h3 class="label-other-categ">Outras Categorias</h3>
+            @foreach(var categ in Model.Categorias){
+ 
+                if(categ.Nome != nameCategDest){
+                    <a asp-controller="Categoria" asp-action="PaginaPrincipal" asp-route-id="@categ.Id" class="other-categ-link">@Html.DisplayName(categ.Nome)</a>
+                }
+            }
+        </div>
+        <div class="container-games-categ">
+            @foreach(var item in Model.JogosInfo){
+                <div class="box-game box-game-categ-page">
+                    @(new HtmlString(item.links[0]))
+                    <div class="box-game-text">
+                        <span class="game-name">
+                            <span>@Html.DisplayName(item.Jogo.Nome)</span>
+                            <span class="ico-plataforma-container">@(new HtmlString(item.links[5]))</span>
+                        </span>
+                        <div class="info-game">
+                            <a asp-controller="Jogo" asp-action="PaginaPrincipal" asp-route-id="@item.Jogo.Id" class="game-buy-btn">
+                                <span>
+                                    <span class="material-symbols-outlined">shopping_cart</span>
+                                    <span>Comprar</span>
+                                </span>
+                            </a>
+                            <span class="game-price"><span>@Html.DisplayName(item.Jogo.Preco.ToString())€</span></span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

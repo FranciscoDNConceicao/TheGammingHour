@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        @if (User.IsInRole("Admnistrador"))
+        {
+            <li class="menu-btn nav-item">
+                <div class="dropdown">
+                      <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                      </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" asp-controller="Jogo" asp-action="Index">Jogo</a>
+                        <a class="dropdown-item" asp-controller="Categoria" asp-action="Index">Categoria</a>
+                        <a class="dropdown-item" asp-controller="Produtora" asp-action="Index">Produtora</a>
+                        <a class="dropdown-item" asp-controller="Plataforma" asp-action="Index">Plataforma</a>
+                    </div>
+
+                </div>
+            </li>
+        }
+
+
+        <li class="nav-item">
+            <a class="add-cart-btn">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            <span class="label-buy-cart">0</span>
+            </a>
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+            <span class="user-icon material-symbols-outlined">person</span><span class="user-name">@User.Identity?.Name</span>
+        </a>
+        </li>
+        <li class="nav-item">
+            <form class="exit-login form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a id="LoginBtn" class="nav-link" asp-area="Identity" asp-page="/Account/Login">
+                <span class="material-symbols-outlined">person</span><span class="LoginBtnText">Conecte-se</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a id="RegisterBtn" class="nav-link" asp-area="Identity" asp-page="/Account/Register">Registe-se</a>
+        </li>
+    }
+</ul>

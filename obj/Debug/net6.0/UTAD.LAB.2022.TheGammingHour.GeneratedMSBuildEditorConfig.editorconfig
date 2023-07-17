@@ -1,0 +1,197 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = UTAD.LAB._2022.TheGammingHour
+build_property.RootNamespace = UTAD.LAB._2022.TheGammingHour
+build_property.ProjectDir = G:\O meu disco\Eu\Universidade\3ºano\1ºSemestre\Laboratório de Aplicações Web e Base de Dados\UTAD.LAB.2022.TheGammingHour\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = G:\O meu disco\Eu\Universidade\3ºano\1ºSemestre\Laboratório de Aplicações Web e Base de Dados\UTAD.LAB.2022.TheGammingHour
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Categoria/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Categoria/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Categoria/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Categoria/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Categoria/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Categoria/PaginaPrincipal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXFBhZ2luYVByaW5jaXBhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Home/PaginaDescontos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdpbmFEZXNjb250b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Jogo/Biblioteca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xCaWJsaW90ZWNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Jogo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Jogo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Jogo/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Jogo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Jogo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Jogo/ListaClassificação.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xMaXN0YUNsYXNzaWZpY2HDp8Ojby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Jogo/PaginaPrincipal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xQYWdpbmFQcmluY2lwYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Plataforma/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhdGFmb3JtYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Plataforma/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhdGFmb3JtYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Plataforma/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhdGFmb3JtYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Plataforma/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhdGFmb3JtYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Produtora/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3JhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Produtora/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3JhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Produtora/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3JhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Produtora/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3JhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/O meu disco/Eu/Universidade/3ºano/1ºSemestre/Laboratório de Aplicações Web e Base de Dados/UTAD.LAB.2022.TheGammingHour/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-j479kbstte

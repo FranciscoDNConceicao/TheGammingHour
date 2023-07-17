@@ -1,0 +1,129 @@
+﻿@model UTAD.LAB._2022.TheGammingHour.Models.ModelIndex
+@using System.Web
+@using Microsoft.AspNetCore.Html
+@{
+    ViewData["Title"] = "The Gamming Hour";
+}
+<form class="form-pesquisa" asp-controller="Jogo" asp-action="Search">
+    <div class="form-search">
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input type="text" class="input-form" name="searchName" placeholder="Pesquisa por Jogos">
+    </div>
+</form>
+<div class="containter-title-index">
+    <div class="container-index">
+        <div class="line"></div>
+        <div class="title-subtitle-index">
+            <div class="title-index">
+                THE<span class="destac">GAMMING</span>HOUR
+            </div>
+            <div class="subtitle-index">
+                Os melhores jogos e os melhores preços de Portugal
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+       
+</div>
+
+<div class="Promocao-publi">
+    <a asp-controller="Home" asp-action="PaginaDescontos">
+        <img src="~/Imagens/PublicidadeAnoNovo.png" />
+    </a>
+</div>
+<div class="containter-title-index">
+    <div class="container-index">
+        <section class="tend-game">
+            <h2>Jogos em Alta</h2>
+            <div class="table-tend-games">
+                <div class="row-1-tend-game">
+                    @foreach (var item in Model.JogosInfo.Take(4))
+                    {
+                        <div class="box-game">
+                            @(new HtmlString(item.links[0]))
+                            <div class="box-game-text">
+                                <span class="game-name">
+                                    <span>@Html.DisplayName(item.Jogo.Nome)</span>
+                                    <span class="ico-plataforma-container">@(new HtmlString(item.links[5]))</span>
+                                </span>
+                                <div class="info-game">
+                                    <a asp-controller="Jogo" asp-action="PaginaPrincipal" asp-route-id="@item.Jogo.Id" class="game-buy-btn">
+                                        <span>
+                                            <span class="material-symbols-outlined">shopping_cart</span>
+                                            <span>Comprar</span>
+                                        </span>
+                                    </a>
+                                    <span class="game-price"><span>@Html.DisplayName(item.Jogo.Preco.ToString())€</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="row-2-tend-game">
+                    @foreach (var item in Model.JogosInfo.Skip(4)){
+                        <div class="box-game">
+                            @(new HtmlString(item.links[0]))
+                            <div class="box-game-text">
+                                <span class="game-name">
+                                    <span>@Html.DisplayName(item.Jogo.Nome)</span>
+                                    <span class="ico-plataforma-container"> @(new HtmlString(item.links[5]))</span>
+                                </span>
+                                <div class="info-game">
+                                    <a asp-controller="Jogo" asp-action="PaginaPrincipal" asp-route-id="@item.Jogo.Id" class="game-buy-btn"><span><span class="material-symbols-outlined">shopping_cart</span><span>Comprar</span></span></a>
+                                    <span class="game-price"><span>@Html.DisplayName(item.Jogo.Preco.ToString())€</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<section class="container-information">
+    <div class="container-information-title">
+        <h2>Como Funciona a compra?</h2>
+    </div>
+    <div class="container-information-topics">
+        <div class="box-information">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+            <h3>Adicione o seu Jogo Favorito ao seu carrinho</h3>
+            <p>Basta adicionares o jogo ao teu carrinho e efetuares o pagamento.</p>
+        </div>
+        <div class="box-information">
+            <span class="material-symbols-outlined">
+                payments
+            </span>
+            <h3>Recebe os dados do teu Jogo no e-mail</h3>
+            <p>Os códigos e instruções de como instalar na tua plataforma são enviadas via email, precisa de confirmação do e-mail para receber.</p>
+        </div>
+        <div class="box-information">
+            <span class="material-symbols-outlined">
+                sports_esports
+            </span>
+            <h3>Diverte-te com o teu jogo</h3>
+            <p>Depois da instalação, é só diversão com o novo jogo só aqui na melhor loja digital</p>
+        </div>
+    </div>
+
+</section>
+<div class="containter-title-index">
+    <div class="container-index">
+        <div class="title-categ-list">
+            <h3>Lista de Categorias Disponiveis</h3>
+        </div>
+
+        <div>
+            <div class="container-list-categ">
+                @foreach (var item in Model.Categorias){
+                    <a asp-controller="Categoria" asp-action="PaginaPrincipal" asp-route-id="@item.Id" class="categ-topic">
+                    <span class="categ-topic-link" >@Html.DisplayName(item.Nome)</span>
+                </a>
+                }
+            </div>
+        </div>
+
+    </div>
+</div>

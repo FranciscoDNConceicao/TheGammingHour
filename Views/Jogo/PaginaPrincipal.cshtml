@@ -1,0 +1,133 @@
+﻿@using System.Web
+@model UTAD.LAB._2022.TheGammingHour.Models.JogoInfo
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body class="body-game-page">    
+    <div class="product-page-main">
+         <div class="header-page-game">
+            <h1 class="game-name-title">@Html.DisplayFor(model => model.Jogo.Nome)</h1>
+         </div>
+         <div class="page-game">
+             <div class="produtora-container">
+                 <div class="produtora-img">
+                    @Html.Raw(HttpUtility.HtmlDecode(Model.links[5]))
+                 </div>
+                 <div class="produtora-header">
+                    <span>@Html.DisplayFor(model => model.Produtora.Nome)</span>
+                 </div>
+             </div>
+             <div class="game-info-container">
+                <div id="myGameSlider" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myGameSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#myGameSlider" data-slide-to="1" ></li>
+                        <li data-target="#myGameSlider" data-slide-to="2" ></li>
+                        <li data-target="#myGameSlider" data-slide-to="3" ></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container" id="container-game">
+                                @Html.Raw(HttpUtility.HtmlDecode(Model.links[1]))
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container" id="container-game">
+                                @Html.Raw(HttpUtility.HtmlDecode(Model.links[2]))
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container" id="container-game">
+                                @Html.Raw(HttpUtility.HtmlDecode(Model.links[3]))
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container" id="container-game">
+                                @Html.Raw(HttpUtility.HtmlDecode(Model.links[4]))
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#mygameSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                        <span class="sr-only">Previous</span>
+                        <span class='carousel-control-prev-icon' aria-hiden="true"></span>
+                    </a>
+                    <a href="#mygameSlider" class="carousel-control-next" role="button" data-slide="next">
+                        <span class="sr-only">Previous</span>
+                        <span class="carousel-control-next-icon" aria-hiden="true"></span>
+                    </a>
+                </div>
+                <div class="description-game">
+                    <h4>Descrição</h4>
+                    <p>@Html.DisplayFor(model => model.Jogo.Descricao)</p>
+                </div>
+                <div class="especif-game">
+                    <h4>Especificações</h4>
+                    <ul class="especif-game-topics">
+                        <li class="clearfix">
+                            <div class="coluna-espicif">
+                            <span>Categoria</span>
+                            </div>
+                            <div class="resp-espcif">
+                                <p>@Html.DisplayFor(model => model.Categoria.Nome)</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="coluna-espicif">
+                            <span>Produtora</span>
+                            </div>
+                            <div class="resp-espcif">
+                                <p>@Html.DisplayFor(model => model.Produtora.Nome)</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="coluna-espicif">
+                            <span>Data de Lançamento</span>
+                            </div>
+                            <div class="resp-espcif">
+                                <p>@Html.DisplayFor(model => model.Jogo.Data.Day)/@Html.DisplayFor(model => model.Jogo.Data.Month)/@Html.DisplayFor(model => model.Jogo.Data.Year)</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="coluna-espicif">
+                            <span>Plataforma</span>
+                            </div>
+                            <div class="resp-espcif">
+                                <p>@Html.DisplayFor(model => model.Plataforma.Nome)</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="coluna-espicif">
+                            <span>PEGI</span>
+                            </div>
+                            <div class="resp-espcif">
+                                <p>@Html.DisplayFor(model => model.Jogo.Pegi)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+             <div class="container-add-game">
+                 <span class="title-preco">Preço</span>
+                
+                @if(Model.Jogo.Desconto){
+                    <span style="text-decoration: line-through">@Html.DisplayName(Model.Jogo.Preco.ToString())€</span>
+                    <span style="color:#BE2911;margin-left: 14px;font-size: 23px;">@Html.DisplayName(Math.Round(Convert.ToDecimal(Model.Jogo.Preco * Model.Jogo.PercentagemDesconto), 2).ToString())€</span>
+                }else{
+                    <span class="price-game">@Html.DisplayFor(model => model.Jogo.Preco)€</span>    
+                }
+                <a asp-controller="Jogo" asp-action="CompraJogo" asp-route-id="@Model.Jogo.Id" class="add-game-cart-btn">
+                    <span id="add-game-cart-btn-icon" class="material-symbols-outlined">shopping_cart</span>
+                    <span class="add-game-cart-btn-text">Adicionar ao carrinho</span>
+                </a>
+             </div>
+        </div>
+
+    </div>  
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

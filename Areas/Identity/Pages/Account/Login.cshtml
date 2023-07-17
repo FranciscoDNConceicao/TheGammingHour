@@ -1,0 +1,73 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+    Layout = null;
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Gamming Hour</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Cabecalho.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/The_Gaming_Hour_UTAD_2022.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/FontAwesome/all.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,1,0" />
+    <link rel="shortcut icon" href="~/Imagens/logo-icon.ico" type="image/x-icon" />
+</head>
+<body class="login-page">
+    <div class="form-container">
+        <div class="container-login">
+            <form id="account" method="post">
+                <a href="index.html" class="nav-logo-title-container"><img class="nav-logo-title" src="~/Imagens/TheGammingHourTitleLogo.png" /></a>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="login-item text-box-email form-floating">
+                    <div class="icon-login">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <input asp-for="Input.Username" class="form-control" autocomplete="username" aria-required="true" />
+                    <label asp-for="Input.Username" id="label-text-input" class="form-label"></label>
+                    <span asp-validation-for="Input.Username" class="text-danger"></span>
+                </div>
+                <div class="login-item text-box-email  form-floating">
+                    <div class="icon-login">
+                        <span class="material-symbols-outlined">key</span>
+                    </div>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" />
+                    <label asp-for="Input.Password" id="label-text-input" class="form-label label-text-input"></label>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="login-item">
+                    <div class="checkbox">
+                        <label asp-for="Input.RememberMe" class="form-label">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                           Não esquecer
+                        </label>
+                    </div>
+                </div>
+                <div class="login-item">
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                </div>
+                <div class="login-item">
+                    <p>
+                        <a id="forgot-password" asp-page="./ForgotPassword">Esqueceu-se da palavra-passe?</a>
+                    </p>
+                    <p>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Registo como novo utilizador</a>
+                    </p>
+                    <p>
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Reenviar e-mail da confirmação</a>
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

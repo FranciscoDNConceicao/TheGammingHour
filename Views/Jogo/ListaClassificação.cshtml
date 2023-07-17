@@ -1,0 +1,44 @@
+﻿@using Microsoft.AspNetCore.Html
+@model UTAD.LAB._2022.TheGammingHour.Models.ModelIndex
+
+@{
+    ViewData["Title"] = "ListaClassificação";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+<div class="container-classif">
+    <h1>Classificação dos Jogos</h1>
+    <div class="container-table">
+        @foreach (var item in Model.JogosInfo.Take(20)) {
+            <a asp-controller="Jogo" asp-action="PaginaPrincipal" asp-route-id="@item.Jogo.Id" class="container-topic">
+                <div class="img-topic">
+                    @(new HtmlString(item.links[0]))
+                </div>
+                <div class="text-topic">
+                    <div class="name-topic">
+                        <span>@Html.DisplayName(item.Jogo.Nome)</span>
+                    </div>
+                    <div class="categ-name-topic">
+                        <span>@Html.DisplayName(item.Categoria.Nome)</span>
+                    </div>
+                    <div class="date-topic">
+                        <span>
+                            <span class="material-symbols-outlined">calendar_month</span>@Html.DisplayName(item.Jogo.Data.ToString("dd MMMM yyyy"))
+                        </span>
+                    </div>
+                    <div class="topic-class-price">
+                        <div class="avaliac-topic">
+                            <span>
+                                @Html.DisplayName(item.Jogo.Avaliacao.ToString())/5<span class="material-symbols-outlined">star</span>
+                            </span>
+                        </div>
+                        <div class="preco-topic">
+                            <span>@Html.DisplayName(item.Jogo.Preco.ToString())€</span>
+                        </div>
+                    </div>
+                </div>
+
+            </a>
+        }
+     </div>
+</div>

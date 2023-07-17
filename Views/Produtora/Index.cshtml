@@ -1,0 +1,42 @@
+﻿@model IEnumerable<UTAD.LAB._2022.TheGammingHour.Models.Produtora>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<p class="btn-parag-create">
+    <a class="btn-create" asp-action="Create">Criar uma nova Produtora</a>
+</p>
+<table class="editTable table">
+    <thead>
+        <tr>
+            <th class="topic-editTable">
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th class="topic-editTable"></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="column-topic">
+            <td class="column-topic-editTable">
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+                <td class="btn-column">
+                    <a class="btn-edit" asp-action="Edit" asp-route-id="@item.Id">
+                        <span class="material-symbols-outlined">
+                            edit
+                        </span>
+                    </a> 
+                    <a class="btn-delete" asp-action="Delete" asp-route-id="@item.Id">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                    </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

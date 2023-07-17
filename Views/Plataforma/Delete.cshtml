@@ -1,0 +1,18 @@
+﻿@model UTAD.LAB._2022.TheGammingHour.Models.Plataforma
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Delete</h1>
+
+<h3>Tem a certeza que quer eliminar a plataforma @Html.DisplayFor(model => model.Nome)?</h3>
+<div class="delete-container container-input"">
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn-input-topics btn btn-danger" />
+
+    </form>
+</div>

@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Html;
+@model List<UTAD.LAB._2022.TheGammingHour.Models.JogoInfo>
+@{
+    ViewData["Title"] = "PaginaDescontos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-descontos">
+    <h1 class="title-descontos">
+        Promoções Ano Novo
+    </h1>
+    
+    <div class="container-jogos-descontos">
+        @foreach (var item in Model)
+        {
+            <div class="box-game box-game-categ-page">
+                @(new HtmlString(item.links[0]))
+                <div class="box-game-text">
+                    <span class="game-name">
+                        <span>@Html.DisplayName(item.Jogo.Nome)</span>
+                        <span class="ico-plataforma-container">@(new HtmlString(item.links[5]))</span>
+                    </span>
+                    <div class="info-game">
+                        <a asp-controller="Jogo" asp-action="PaginaPrincipal" asp-route-id="@item.Jogo.Id" class="game-buy-btn">
+                            <span>
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <span>Comprar</span>
+                            </span>
+                        </a>
+                        <span class="game-price">
+                            <span style="text-decoration: line-through">@Html.DisplayName(item.Jogo.Preco.ToString())€</span>
+                            <span style="color:#BE2911;margin-left: 14px;font-size: 23px;">@Html.DisplayName(Math.Round(Convert.ToDecimal(item.Jogo.Preco * item.Jogo.PercentagemDesconto), 2).ToString())€</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    
+</div>
+

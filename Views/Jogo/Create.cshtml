@@ -1,0 +1,97 @@
+﻿@model UTAD.LAB._2022.TheGammingHour.Models.JogoInfo
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<configuration>
+    <system.web>
+        <globalization enableClientBasedCulture="true"
+                       culture="en-GB" />
+    </system.web>
+<h1>Criar Jogo</h1>
+
+<div class="box-container-input row">
+    <div class="container-input-topics col-md-4">
+            <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="container-input  form-group">
+                <label asp-for="Jogo.Nome" class="label-input control-label"></label>
+                <input asp-for="Jogo.Nome" class="form-control" />
+                <span asp-validation-for="Jogo.Nome" class="text-danger"></span>
+            </div>
+            <div class="container-input form-group">
+                    <label asp-for="Jogo.Data" class="label-input control-label"></label>
+                <input asp-for="Jogo.Data" class="form-control" />
+                <span asp-validation-for="Jogo.Data" class="text-danger"></span>
+            </div>
+            <div class="container-input form-group">
+                <label asp-for="Jogo.Preco" class=" label-input control-label"></label>
+                <input asp-for="Jogo.Preco" class="form-control" />
+                <span asp-validation-for="Jogo.Preco" class="text-danger"></span>
+            </div>
+                <div class="container-input form-group">
+                    <label asp-for="Jogo.Pegi" class="label-input control-label"></label>
+                <input asp-for="Jogo.Pegi" class="form-control" />
+                <span asp-validation-for="Jogo.Pegi" class="text-danger"></span>
+            </div>
+            <div class="container-input form-group">
+                <label asp-for="Jogo.Descricao" class="label-input control-label"></label>
+                <input asp-for="Jogo.Descricao" class="form-control" />
+                <span asp-validation-for="Jogo.Descricao" class="text-danger"></span>
+            </div>
+                <div class="container-input form-group form-check">
+                    <label class="label-input form-check-label">
+                    <input class="form-check-input" asp-for="Jogo.Desconto" /> @Html.DisplayNameFor(model => model.Jogo.Desconto)
+                </label>
+            </div>
+            <div class="container-input form-group">
+                 <label asp-for="Jogo.PercentagemDesconto" class="label-input control-label"></label>
+                <input asp-for="Jogo.PercentagemDesconto" class="form-control" />
+                <span asp-validation-for="Jogo.PercentagemDesconto" class="text-danger"></span>
+            </div>
+             <div class="container-input form-group">
+                <label asp-for="Jogo.Avaliacao" class="label-input control-label"></label>
+                <input asp-for="Jogo.Avaliacao" class="form-control" />
+                <span asp-validation-for="Jogo.Avaliacao" class="text-danger"></span>
+            </div>
+
+            <div class="container-input form-group">
+                <div>Selecione a categoria:</div>
+                <select asp-for="Categoria.Id" asp-items="@ViewBag.Categoria">
+                </select>
+            </div>
+            <div class="container-input form-group">
+                <div>Selecione a plataforma</div>
+                <select asp-for="Plataforma.Id" asp-items="@ViewBag.Plataforma">
+                </select>
+            </div>
+            <div class="container-input form-group">
+                <div>Selecione a produtora</div>
+                <select asp-for="Produtora.Id" asp-items="@ViewBag.Produtora">
+                </select>
+            </div>
+            <div class="container-input form-group">
+                <div class="label-input">Insira a Imagem de Capa</div>
+                <input asp-for="ImagemCapa" class="form-control"/>
+                <span asp-validation-for="ImagemCapa" class="text-danger"></span>
+            </div>
+            <div class="container-input form-group">
+                    <div class="label-input ">Insira as diversas Imagens(Max: 4)</div>
+                <input asp-for="LinkImages" class="form-control" multiple />
+                <span asp-validation-for="LinkImages" class="text-danger"></span>
+            </div>
+
+            <div class="container-input form-group">
+                <input  type="submit" value="Create" class=" btn-input-topics btn btn-primary" />
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

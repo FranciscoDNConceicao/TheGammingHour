@@ -1,0 +1,927 @@
+@font-face {
+    font-family: TitleGammingFont;
+    src: url("../Fonts/Retro-Gaming.otf") format("opentype");
+}
+@font-face{
+    font-family: Pretendo;
+    src: url("../Fonts/Pretendo.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap');
+html {
+    font-size: 14px;
+    
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html body {
+    font-family: 'Hanken Grotesk';
+    background-color: #272526;
+    color: white;
+}
+.nav-logo {
+    height: 100px;
+    width: 259px;
+}
+
+/* Login/Register Page*/
+
+
+.body-game-page {
+    
+    background-color: #272526;
+}
+.form-container {
+    color: black; 
+    background: #272526;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.nav-logo-title-container{
+    display:flex;
+    justify-content:center;
+}
+.container{
+    padding: 0px;
+}
+.nav-logo-title {
+    height: 193px;
+    width: 393px;
+    align-self: center;
+    margin: 1px 0px 40px 0px;
+} 
+.text-box-email {
+    display: inline-flex;
+}
+.form-container .container-login {
+    background-color: #ffffff;
+    border: 6px solid #BE2911;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 717px;
+    height: 661px;
+}
+.login-item{
+    width:100%;
+    margin-bottom: 15px;
+}
+.form-control {
+    border: 2px solid #272526;
+    border-radius: 0px;
+}
+#label-text-input{
+    margin: 0px 41px;
+}
+
+.icon-login {
+    background: #272526;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 0px 0px 20px;
+    width: 50px;
+}
+.icon-login .material-symbols-outlined {
+    align-self: center;
+    color: white;
+}
+.form-check-input {
+    border: 2px solid #272526;
+}
+.form-check-input:checked {
+    border: 2px solid #272526;
+    background-color: #272526;
+}
+.btn-primary {
+    background-color: #BE2911;
+    border: 2px solid #BE2911;
+    border-radius: 40px;
+}
+.btn-primary:hover {
+    background-color: #272526;
+    color: white;
+    border: 2px solid #272526;
+}
+.login-item p a {
+    color: #272526;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+}
+.login-item p a:hover {
+    color: white;
+    border-radius: 40px;
+    background-color: #272526;
+}
+.form-container .container-register {
+    background-color: #ffffff;
+    border: 6px solid #A53022;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 717px;
+    height: 830px;
+}
+
+/*Página Index*/
+
+.containter-title-index {
+    color: white;
+    background-color: #272526;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.container-index {
+    background-color: #272526;
+    width: 100%;
+    height: 100%;
+    margin: 20px 100px;
+    
+}
+.title-index{
+    font-family: TitleGammingFont;
+    font-size: 77px;
+    display:flex;
+    justify-content: center;
+ 
+}
+.destac {
+    color: #A53022;
+}
+.subtitle-index {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.title-subtitle-index {
+    border: 9px solid #FFFFFF;
+    border-radius: 40px;
+    margin: 50px 400px;
+}
+.line {
+    border: 9px dashed #BE2911;
+}
+/*Caixa com Jogos*/
+.tend-game {
+    margin: 20px 150px;
+    font-family: 'Hanken Grotesk';
+}
+.tend-game h2 {
+    font-family: 'Hanken Grotesk';
+    margin: 30px 0px 30px 0px;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 40px;
+    width: fit-content;
+}
+.table-tend-games{
+
+}
+.row-1-tend-game {
+    margin: 34px 70px 41px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.row-2-tend-game {
+    margin: 0px 70px 33px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-game {
+    border: 1px solid #272526;
+    width: 300px;
+    height: 377px;
+    border-radius: 30px;
+    background-color: #A3A2A2;
+}
+.box-game img {
+    width: 290px;
+    height: 272px;
+    margin: 5px 5px 0px 4px;
+    border-radius: 23px 23px 0px 0px;
+    border: 5px solid #272526;
+}
+.box-game-text {
+    border-left: 5px solid #272526;
+    height: 94px;
+    width: 290px;
+    border-right: 5px solid #272526;
+    border-bottom: 5px solid #272526;
+    margin: 0px 5px 9px 4px;
+    border-radius: 0px 0px 30px 30px;
+    display: grid;
+}
+.game-name {
+    background-color: #A3A2A2;
+    margin: 1px 0px 0px 0px;
+    color: #272526;
+    padding: 4px 0px 0px 7px;
+    text-decoration: none;
+    height: 32px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: system-ui;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.game-name span {
+    align-self: center;
+    margin: 9px 0px 0px 0px;
+    font-family: 'Hanken Grotesk';
+}
+#ico-plataforma {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+
+.ico-plataforma-container {
+    align-self: center;
+    padding: 2px;
+    margin: 9px 0px 0px 0px;
+    border-radius: 11px 0px 0px 11px;
+    border: 5px solid #272526;
+    background-color: #A53022;
+    border-right: 0px;
+}
+.info-game {
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    text-align: center;
+}
+.game-buy-btn {
+    color: white;
+    background-color: #A53022;
+    border-radius: 0px 0px 0px 23px;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.game-buy-btn:hover {
+    background-color: #BE2911;
+    color: white;
+    text-decoration:none;
+}
+.game-buy-btn span {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+.game-buy-btn span span{
+    align-self: center;
+
+}
+.game-buy-btn span .material-symbols-outlined {
+    font-size: 30px;
+    align-self: center;
+}
+.game-price {
+    height: 100%;
+    width: 100%;
+    background-color: #272526;
+    border-radius: 0px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+}
+.game-price span {
+    align-self: center;
+}
+
+.box-game:hover {
+    box-shadow: 1px 1px 5px 10px rgba(190,41,17,0.89);
+}
+.line2 {
+    border: 5px dashed #BE2911;
+}
+
+/*Container Informação*/
+.container-information {
+    padding: 30px 64px 58px 64px;
+    background-color: #A3A2A2;
+    border-top: 9px solid #BE2911;
+    border-bottom: 9px solid #BE2911;
+}
+.container-information-title {
+    text-align: center;
+    color: #BE2911;
+    background-color: white;
+    border: 5px solid #BE2911;
+    margin: 0px 639px;
+    padding: 5px;
+    font-family: 'Hanken Grotesk';
+    border-radius: 30px;
+    font-weight: 700;
+}
+.container-information-topics {
+    display: flex;
+    justify-content: space-between;
+}
+.box-information {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    align-content: center;
+    flex-direction: column;
+    margin: 30px 0px 0px -1px;
+}
+.box-information span {
+    justify-content: center;
+    font-size: 50px;
+    align-self: center;
+    color: white;
+    background-color: #A53022;
+    border-radius: 30px;
+    padding: 10px;
+    border: 5px solid;
+}
+.box-information h3 {
+    text-align: center;
+    font-family: 'Hanken Grotesk';
+    margin: 20px 73px 3px 73px;
+    color: black;
+}
+.box-information p {
+    text-align: center;
+    margin: 9px 121px 3px 135px;
+    color: black;
+    font-family: 'Hanken Grotesk';
+}
+
+/*Promoção Publicidade*/
+.Promocao-publi {
+    border-top: 9px solid #BE2911;
+    border-bottom: 9px solid #BE2911;
+}
+.Promocao-publi img {
+    width: 100%;
+    height: 350px;
+}
+
+/*Lista de Categoria*/
+.title-categ-list h3 {
+    font-family: 'Hanken Grotesk';
+    margin: 30px 0px 30px 0px;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 40px;
+    width: fit-content;
+}
+.container-list-categ {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.categ-topic {
+    color: white;
+    padding: 10px;
+    width: 300px;
+    background-color: #A53022;
+    text-align: center;
+    margin: 0px 41px 8px 69px;
+    border-radius: 30px;
+    border: 3px solid white;
+}
+.categ-topic:hover {
+    background-color: #BE2911;
+    text-decoration: none;
+    font-weight: 600;
+}
+.categ-topic .categ-topic-link {
+    color: white;
+    text-decoration: none;
+    /* background-color: #A53022; */
+    /* padding: 10px; */
+    font-size: 22px;
+    /* margin: 5px; */
+    /* border-radius: 30px; */
+    /* text-align: center; */
+    width: 100%;
+}
+/*Página do Jogo*/
+
+.product-page-main {
+    background-color: #272526;
+    color:white;
+    margin: 50px 300px 50px 300px;
+}
+.game-name-title {
+    font-family: 'Hanken Grotesk';
+    font-weight: 800;
+    font-size: 47px;
+    margin-bottom: 24px;
+}
+.page-Game {
+    display: flex;
+    justify-content: center;
+}
+#container-game{
+    padding: 0;
+}
+.game-info-container {
+    background-color: #D7D6D4;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 20px 10px 20px;
+    border-radius: 30px;
+    border: 5px solid #BE2911;
+}
+#myGameSlider {
+    width: 750px;
+    height: 442px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    margin: 20px 20px 20px 24px;
+}
+.image-carrousel{
+    width: 740px;
+    height: 432px;
+}
+.produtora-container {
+    background-color: #D7D6D4;
+    margin: 10px 20px 10px 20px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #BE2911;
+    border-radius: 20px;
+}
+.produtora-header {
+    font-family: 'Hanken Grotesk';
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #272526;
+    margin: 4px 0px;
+}
+.container-add-game {
+    background-color: #D7D6D4;
+    margin: 10px 20px 10px 20px;
+    height: 200px;
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #BE2911;
+    border-radius: 20px;
+}
+
+.price-game {
+    font-family: 'Hanken Grotesk';
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    color: #272526;
+    margin: 2px 132px 5px 0px;
+}
+.add-game-cart-btn {
+    color: white;
+    background-color: #A53022;
+    width: 210px;
+    border: 4px solid black;
+    border-radius: 18px;
+    height: 53px;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+}
+#add-game-cart-btn-icon {
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    align-self: center;
+}
+.title-preco {
+    font-family: 'Hanken Grotesk';
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    margin: 10px 0px;
+    border: 5px solid;
+    padding: 3px 25px;
+    border-radius: 12px;
+}
+.produtora-img img {
+    border-radius: 15px;
+    width: 125px;
+    height: 125px;
+}
+.add-game-cart-btn-text {
+    font-size: 15px;
+    align-self: center;
+    font-weight: 600;
+}
+.description-game {
+    color: black;
+    font-family: 'Hanken Grotesk';
+    margin: 26px 28px;
+}
+.description-game h4 {
+    font-weight: 900;
+}
+.description-game p{}
+
+.especif-game {
+    color: #272526;
+    font-family: 'Hanken Grotesk';
+    margin: 0px 28px;
+}
+.especif-game-topics {
+    border: 2px solid #272526;
+    padding: 16px;
+    border-radius: 30px;
+}
+.especif-game h4 {
+    font-weight: 900;
+    margin-bottom: 19px;
+}
+.especif-game .clearfix {
+    list-style-type: none;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    justify-content: left;
+}
+.clearfix .coluna-espicif {
+    width: 230px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.clearfix .resp-espcif {
+    margin-left: 0px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/*Página das Categorias*/
+
+.categ-page {
+    width: 100%;
+    background-color: #272526;
+    padding-top: 50px;
+}
+.categ-name {
+    color: white;
+    font-family: 'Hanken Grotesk';
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin: 0px 213px 40px 310px;
+    border: 12px dashed #A53022;
+    border-radius: 40px;
+}
+.categ-name p {
+    margin-left: 31px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Hanken Grotesk';
+}
+.container-categ-page {
+    display: flex;
+    margin: 50px 0px 0px 0px;
+    width: 100%;
+    justify-content: center;
+    /* height: 700px; */
+    padding-bottom: 200px;
+}
+.container-games-categ {
+    grid-template-columns: auto auto auto;
+    width: 1048px;
+    /* display: table; */
+    height: 100%;
+    display: grid;
+}
+.container-categ {
+    color: white;
+    padding: 20px;
+    display: flex;
+    height: auto;
+    width: 281px;
+    margin-right: 41px;
+    flex-direction: column;
+    margin-right: 200px;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
+}
+.other-categ-link {
+    margin: 7px;
+    color: white;
+    font-family: 'Hanken Grotesk';
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-weight: 100;
+}
+.other-categ-link:hover {
+    color:white;
+    font-weight:600;
+    text-decoration: none;
+    background-color: #A53022;
+    border-radius: 10px;
+    transition: background 0.8s 0.1s ease, border-radius 0.8s 0.4s ease;
+}
+.label-other-categ {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.box-game-categ-page{
+    margin: 10px 20px;
+}
+
+/*Tabela de Classificação */
+
+.container-classif {
+    width: 100%;
+    height: 100%;
+    background-color: #272526;
+    color: white;
+    font-family: 'Hanken Grotesk';
+    display: table;
+    flex-direction: column;
+}
+.container-classif h1 {
+    margin: 30px 11px 30px 150px;
+}
+.img-topic {
+    border-radius: 30px;
+    border: 5px solid #BE2911;
+}
+.img-topic img {
+    width: 200px;
+    height: 199px;
+    border-radius: 24px;
+}
+.container-topic {
+    display: flex;
+    margin-bottom: 23px;
+    padding: 20px;
+    border: 5px solid #A53022;
+    border-radius: 30px;
+    background-color: #2E2F33;
+}
+.container-table {
+    color: white;
+    margin: 41px 377px;
+    font-size: 20px;
+}
+.text-topic {
+    margin-top: 20px;
+    color: white;
+}
+.name-topic {
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.categ-name-topic {
+    font-size: 16px;
+    margin-left: 20px;
+    width: fit-content;
+    padding: 2px 7px;
+    background-color: gray;
+    border-radius: 30px;
+}
+.topic-class-price {
+    margin-top: 19px;
+    width: 870px;
+    justify-content: space-between;
+    display: flex;
+}
+.categ-name-topic span .material-symbols-outlined {
+    font-size: 16px;
+}
+.avaliac-topic {
+    color: yellow;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.avaliac-topic span {
+    font-size: 19px;
+}
+.date-topic{
+    font-size: 16px;
+    color: lightgray;
+    margin-left: 12px;
+    margin-top: 13px;
+}
+.date-topic span{
+    display:flex;
+}
+.date-topic span .material-symbols-outlined{
+    align-self: center;
+}
+.preco-topic {
+    font-size: 27px;
+    margin-right: 20px;
+}
+.container-topic:hover {
+    box-shadow: #A53022 0px 5px 15px;
+    text-decoration:none;
+}
+
+/*Edição de tabelas*/
+body .editTable {
+    color: white;
+    margin: 50px 50px 450px 375px;
+    width: 1000px;
+}
+.editTable thead{
+
+}
+
+.topic-editTable {
+    color: white;
+}
+
+.column-topic{
+
+  
+}
+.column-topic .column-topic-editTable {
+    color: white;
+    vertical-align: middle;
+    font-size: 20px;
+}
+.btn-create {
+    margin-top: 50px;
+    margin-left: 350px;
+    color: #A53022;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    border: 5px solid #A53022;
+    font-size: 20px;
+}
+.btn-delete {
+    color: white;
+    background-color: #A53022;
+    padding: 9px;
+    border-radius: 6px;
+    /* display: flex; */
+    align-self: center;
+    justify-content: center;
+}
+.btn-parag-create{
+    margin-top: 40px;
+}
+.btn-delete span {
+    font-size: 18px;
+    align-self: center;
+}
+.btn-edit span{
+
+}
+.btn-edit {
+    margin-right: 13px;
+    align-self: center;
+    background-color: #D7D6D4;
+    color: white;
+    padding: 6px;
+    border-radius: 6px;
+}
+.btn-column{
+    display:flex;
+}
+
+.btn-edit:hover {
+    color: #D7D6D4;
+    background-color: white;
+    text-decoration: none;
+}
+.btn-delete:hover {
+    color: #A53022;
+    background-color: white;
+    text-decoration: none;
+}
+.btn-create:hover {
+    color: white;
+    background-color: #A53022;
+    border: 5px solid white;
+    text-decoration: none;
+}
+/*Create Page*/
+.container-input-topics {
+    border: 5px solid #A53022;
+    padding: 40px;
+    border-radius: 40px;
+}
+.container-input {
+
+}
+.label-input {
+
+}
+.box-container-input {
+    justify-content: center;
+    width: 100%;
+}
+.container-input .btn-input-topics {
+    width: 100%;
+    background-color: #A53022;
+    color: white;
+    border: 5px solid #A53022;
+}
+.container-input .btn-input-topics:hover {
+    background-color: white;
+    color: #A53022;
+    border: 5px solid #A53022;
+}
+.delete-container{
+    height: 100%;
+}
+#btn-delete {
+    margin-top: 50px;
+    width: 400px;
+}
+
+/*Confirmação do e-mail*/
+
+.confirm-email-p {
+    color: white;
+    font-size: 30px;
+    border: 5px solid #A53022;
+    border-radius: 40px;
+    margin: 100px 500px 660px 500px;
+    display: flex;
+    justify-content: center;
+}
+.confirm-email-p #confirm-link {
+    color: white;
+    padding: 10px;
+    font-family: 'Hanken Grotesk';
+}
+/*Lista de jogos comprados*/
+.title-games-bought {
+    margin: 40px 201px 28px 200px;
+}
+.container-games-bought {
+    grid-template-columns: auto auto auto auto auto;
+    width: 1048px;
+    display: grid;
+}
+/*Pagina dos descontos*/
+.container-descontos {
+    background-image: url("../Imagens/DescontosBackground.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-descontos {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-family: 'Hanken Grotesk';
+    font-weight: bold;
+    border: 5px solid;
+    margin: 40px 300px;
+    border-radius: 30px;
+    padding: 10px 3px;
+}
+.container-jogos-descontos {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px 300px;
+}

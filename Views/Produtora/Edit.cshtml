@@ -1,0 +1,36 @@
+﻿@model UTAD.LAB._2022.TheGammingHour.Models.ProdutoraInfo
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<div class="delete-container box-container-input row">
+    <div class="container-input-topics col-md-4">
+        <form asp-action="Edit" enctype=multipart/form-data>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <div class="container-input form-group">
+                <label asp-for="produtora.Nome" class="control-label"></label>
+                <input asp-for="produtora.Nome" class="form-control" />
+                <span asp-validation-for="produtora.Nome" class="text-danger"></span>
+            </div>
+            <div class="container-input form-group">
+                <label class="col-form-label">Select File</label>
+                <input asp-for="platFile" class="form-control" />
+                <span asp-validation-for="platFile" class="text-danger"></span>
+            </div>
+            <div class="container-input form-group">
+                <input type="submit" value="Save" class="btn-input-topics btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

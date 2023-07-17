@@ -1,0 +1,31 @@
+﻿@using Microsoft.AspNetCore.Html
+@model UTAD.LAB._2022.TheGammingHour.Models.CompraJogoInfo
+@{
+    ViewData["Title"] = "Biblioteca";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="title-games-bought">Sua Biblioteca</h1>
+
+<div class="container-games-bought">
+    @foreach(var item in Model.jogos){
+        <div class="box-game box-game-categ-page">
+            @(new HtmlString(item.links[0]))
+            <div class="box-game-text">
+                <span class="game-name">
+                    <span>@Html.DisplayName(item.Jogo.Nome)</span>
+                    <span class="ico-plataforma-container">@(new HtmlString(item.links[5]))</span>
+                </span>
+                <div class="info-game">
+                    <a asp-controller="Jogo" asp-action="PaginaPrincipal" asp-route-id="@item.Jogo.Id" class="game-buy-btn">
+                        <span>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Adquirido</span>
+                        </span>
+                    </a>
+                    <span class="game-price"><span>@Html.DisplayName(item.Jogo.Preco.ToString())€</span></span>
+                </div>
+            </div>
+        </div>
+    }
+</div>
